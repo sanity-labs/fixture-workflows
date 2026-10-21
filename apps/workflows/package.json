@@ -1,0 +1,20 @@
+{
+  "name": "fixture-workflows-definitions",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "check": "sanity-workflows deploy --check --deployment demo",
+    "dry-run": "sanity-workflows deploy --deployment demo --dry-run",
+    "deploy": "sanity-workflows deploy --deployment demo",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@sanity/workflow-engine": "0.36.0"
+  },
+  "devDependencies": {
+    "@sanity/workflow-blueprint": "0.36.0",
+    "@sanity/workflow-cli": "0.36.0",
+    "typescript": "5.9.3"
+  }
+}
