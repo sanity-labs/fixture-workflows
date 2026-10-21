@@ -1,13 +1,6 @@
 {
-  "devDependencies": {
-    "oxfmt": "0.66.0",
-    "oxlint": "1.81.0"
-  },
-  "engines": {
-    "node": ">=22.23.2"
-  },
   "name": "e2e-fn-fixture",
-  "packageManager": "pnpm@10.34.5",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "build": "pnpm --recursive --if-present build",
@@ -21,5 +14,12 @@
     "test": "pnpm --recursive --if-present test",
     "typecheck": "pnpm --recursive --if-present typecheck"
   },
-  "version": "1.0.0"
+  "devDependencies": {
+    "oxfmt": "0.66.0",
+    "oxlint": "1.81.0"
+  },
+  "engines": {
+    "node": ">=22.23.2"
+  },
+  "packageManager": "pnpm@10.34.5"
 }

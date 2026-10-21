@@ -1,4 +1,12 @@
 {
+  "name": "@e2e-fn-fixture/studio",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "sanity build",
+    "dev": "sanity dev",
+    "typecheck": "tsc --noEmit"
+  },
   "dependencies": {
     "@sanity/blueprints": "0.28.0",
     "@sanity/vision": "6.14.1",
@@ -12,13 +20,5 @@
     "@types/react": "19.2.18",
     "@types/react-dom": "19.2.5",
     "typescript": "7.0.2"
-  },
-  "name": "@e2e-fn-fixture/studio",
-  "private": true,
-  "scripts": {
-    "build": "sanity build",
-    "dev": "sanity dev",
-    "typecheck": "tsc --noEmit"
-  },
-  "version": "1.0.0"
+  }
 }

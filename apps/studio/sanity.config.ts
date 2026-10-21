@@ -11,10 +11,16 @@ export default defineConfig({
   schema: { types: [] },
 
   auth: {
-    providers: prev => process.env.SANITY_STUDIO_SSO_LOGIN_URL ? [...prev, {
-      name: 'saml',
-      title: 'Sanity SSO',
-      url: process.env.SANITY_STUDIO_SSO_LOGIN_URL
-    }] : prev
-  }
+    providers: (prev) =>
+      process.env.SANITY_STUDIO_SSO_LOGIN_URL
+        ? [
+            ...prev,
+            {
+              name: 'saml',
+              title: 'Sanity SSO',
+              url: process.env.SANITY_STUDIO_SSO_LOGIN_URL,
+            },
+          ]
+        : prev,
+  },
 });
