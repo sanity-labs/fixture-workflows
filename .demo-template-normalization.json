@@ -1,0 +1,102 @@
+{
+  "actionIds": [
+    "action:1c675009f86c8edb3ffc",
+    "action:2ed11beb5ec8ae53aa1c",
+    "action:dccf938e23f97e4c0b3e",
+    "action:a69ad916937f4560a95d",
+    "action:42a6b1d4b3a50542015b",
+    "action:1639461beebb8fac84b5",
+    "action:92b5d62e46e0f1443799",
+    "action:0c655b07d441dd80feb3",
+    "action:80a7e6482ab3256cf32f",
+    "action:0fdee647af7b61eacb30",
+    "action:cd99fe9e73db555465e7",
+    "action:08ca076922c1887f9aad",
+    "action:c3fa16e10898ff75578d"
+  ],
+  "attestationId": "attestation:7769036b6fde4da4114e",
+  "baselineDigest": "7eb3a9c0274b0421b00ff74d7a270c21be8f86dae5e5eab016a86c41d93caf53",
+  "baselineVersion": "2026.09.16.2",
+  "binding": {
+    "defaultBranch": "main",
+    "defaultHeadSha": "0000000000000000000000000000000000000000",
+    "normalizationHeadSha": "0000000000000000000000000000000000000000",
+    "repository": "demo-repositories/e2e-fn-fixture"
+  },
+  "canonicalSurfaces": {
+    "sdkApps": [],
+    "studio": "apps/studio",
+    "web": null
+  },
+  "environmentBySurface": [
+    {
+      "keys": [
+        "SANITY_STUDIO_DATASET",
+        "SANITY_STUDIO_PROJECT_ID"
+      ],
+      "kind": "studio",
+      "surfaceId": "surface:f543b66602509e9365d4",
+      "targetDirectory": "apps/studio"
+    }
+  ],
+  "environmentKeys": [
+    {
+      "denied": false,
+      "key": "SANITY_STUDIO_DATASET",
+      "provenance": [
+        {
+          "line": 4,
+          "path": "apps/studio/sanity.blueprint.ts",
+          "source": "process-env-reference"
+        },
+        {
+          "line": 6,
+          "path": "apps/studio/sanity.cli.ts",
+          "source": "process-env-reference"
+        },
+        {
+          "line": 9,
+          "path": "apps/studio/sanity.config.ts",
+          "source": "process-env-reference"
+        }
+      ],
+      "surfaces": [
+        "surface:f543b66602509e9365d4"
+      ]
+    },
+    {
+      "denied": false,
+      "key": "SANITY_STUDIO_PROJECT_ID",
+      "provenance": [
+        {
+          "line": 3,
+          "path": "apps/studio/sanity.blueprint.ts",
+          "source": "process-env-reference"
+        },
+        {
+          "line": 5,
+          "path": "apps/studio/sanity.cli.ts",
+          "source": "process-env-reference"
+        },
+        {
+          "line": 8,
+          "path": "apps/studio/sanity.config.ts",
+          "source": "process-env-reference"
+        }
+      ],
+      "surfaces": [
+        "surface:f543b66602509e9365d4"
+      ]
+    }
+  ],
+  "functionBlueprints": [
+    "apps/studio/sanity.blueprint.ts"
+  ],
+  "kind": "baseline-attestation",
+  "planId": "plan:010c822825a95772603c",
+  "reportId": "report:369bbe06183aed34ee0f",
+  "resultingRepositoryHash": "0d75674a328402b0752c949060ab37334d6a02ae489f6cf1e35ee83e403dd144",
+  "schemaVersion": 2,
+  "sourceInventoryId": "inventory:4edf568eea76c5f056e2",
+  "sourceRepositoryHash": "b9ff2d6eee4b58639413e128b484e795617747185e9d2145de660f56403398c1"
+}
